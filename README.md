@@ -116,6 +116,3 @@ To configure all the tools at once, follow these steps:
 
 See `LICENSE`.
 Copyright (c) 2025 Raul Izquierdo Castanedo
-
----
-<style>p:has(+ :is(ul,ol)) { margin-bottom: 0; }</style>

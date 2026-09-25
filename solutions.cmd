@@ -1,3 +1,3 @@
-java -jar solutions.jar %*
+java -jar .\solutions.jar %*
 
 pause

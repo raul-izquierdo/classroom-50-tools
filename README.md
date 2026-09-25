@@ -10,19 +10,13 @@ This repository is a collection of tools created to help instructors manage prog
 
 _Classroom 50_ handles the distribution of programming exercises and the collection of students' work very well. To do this, it needs to be configured with a list of students (a _roster_). Adding this list to _Classroom 50_ is straightforward: simply drag and drop a CSV file containing the students' email addresses.
 
-Problems arise when this list changes. During the first few weeks of a course, it is common for students to join, leave, or change groups. Ideally, once an updated student list is available, it could simply be dragged and dropped again so that _Classroom 50_ would detect and apply the changes automatically. However, _this is not_ how it works:
-- _Classroom 50_ adds new students, but never removes those who are missing from the new CSV.
-- If it detects that a student already exists, it ignores that student without updating their data. For example, it always keeps the student's original group (called `section` in Classroom 50), even if the new CSV specifies a different group for that student.
+Problems arise when this list changes. During the first few weeks of a course, it is common for students to join, leave, or change groups. Ideally, once an updated student list is available, it could simply be dragged and dropped again so that _Classroom 50_ would detect and apply the changes automatically. However, _this is not_ how it works:  uploading a new CSV _only adds new_ students; it never removes or updates existing ones. Such changes must be made manually, one student at a time.
 
-In short, uploading a new CSV only adds _new_ students; it never removes or updates existing ones. Such changes must be made manually, one student at a time.
-
-In practice, however, the real problem is not making the changes manually, since there are usually not many group changes or departures. The real problem is _knowing which students_ have changed. This requires manually comparing both CSV files: the one currently in _Classroom 50_ and the new one. While this may be easy for courses with few students, it is tedious and error-prone for large classes.
-
-To make this task easier, [roster50](https://github.com/raul-izquierdo/roster50) was created. Visit its [repository](https://github.com/raul-izquierdo/roster50) for more information on how to use it.
+In practice, however, the real problem is not making the changes manually, since there are usually not many group changes or departures. The real problem is _knowing which students_ have changed. This requires manually comparing both CSV files: the one currently in _Classroom 50_ and the new one. While this may be easy for courses with few students, it is tedious and error-prone for large classes. [roster50](https://github.com/raul-izquierdo/roster50) carry out this task automatically, detecting changes between both lists. Visit its [repository](https://github.com/raul-izquierdo/roster50) for more information on how to use it.
 
 ### Distributing Solutions
 
-_Classroom 50_ does not provide a way to distribute solutions to students, so this must be done directly through _GitHub_.
+_Classroom 50_ does not provide a way to distribute assignment solutions to students, so this must be done directly through _GitHub_.
 
 To grant students access to solutions on a group-by-group basis, you need a GitHub _team_ for each student group.
 - [teams50](https://github.com/raul-izquierdo/teams50) makes it easy to create and maintain GitHub _teams_ from a _Classroom 50_ roster. Visit its [repository](https://github.com/raul-izquierdo/teams50) for more information on how to use it.
@@ -110,4 +104,4 @@ To configure all the tools at once, follow these steps:
 ## License
 
 See `LICENSE`.
-Copyright (c) 2025 Raul Izquierdo Castanedo
+Copyright (c) 2026 Raul Izquierdo Castanedo

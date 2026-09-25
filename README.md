@@ -44,6 +44,8 @@ Although it is recommended to read the documentation for each tool to understand
 
     [teams50](https://github.com/raul-izquierdo/teams50) updates the teams by adding students, removing them, or changing their group membership so that they end up synchronized with the current state of the Classroom 50 roster (in Classroom 50, each student's group is in the _section_ column).
 
+    Keep in mind that _teams50_ can add students to teams only **after they have accepted** the _Classroom 50_ invitation. Therefore, you may need to run _teams50_ again to add students who accept the invitation after the first run. Read this [section](https://github.com/raul-izquierdo/teams50#when-to-run-teams50) for more details.
+
 - During class, when the instructor wants to give access to the solution of the exercise being explained only to the students in the group attending that class, they only need to run:
     ```bash
     java -jar solutions50.jar

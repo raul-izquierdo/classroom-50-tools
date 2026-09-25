@@ -95,7 +95,7 @@ To configure all the tools at once, follow these steps:
     - The organization specified in `SOLUTIONS_ORG` should **contain the solution repositories**. This may differ from the organization linked to _Classroom 50_. Some instructors prefer to store solutions in a separate organization from assignments (recommended). In that case, specify the organization containing the solutions here. Otherwise, you can use the same organization as `CLASSROOM_ORG`.
     - `GITHUB_TOKEN` should contain a GitHub personal access token with the `repo` and `admin:org` scopes. See the [GitHub documentation: Creating a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic) for instructions.
 
-2. Edit the `groups.csv` file with the schedules for your assigned groups (it initially contains sample data). This file will be used by [solutions50](https://github.com/raul-izquierdo/solutions50) to automatically grant access to the solution repositories. The columns are: group name, day of the week, start time, and duration. If no duration is specified, a default of 2 hours is assumed. Example:
+2. Edit the `groups.csv` file to define the schedule for each assigned group (the file initially contains sample data). [solutions50](https://github.com/raul-izquierdo/solutions50) uses this file to determine which group is currently in the classroom. The columns are: group name, day of the week, start time, and duration. If no duration is specified, a default of 2 hours is assumed. Example:
     ```csv
     01, monday, 21:00
     02, tuesday, 14:00, 3h

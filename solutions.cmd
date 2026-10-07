@@ -1,3 +1,3 @@
-java -jar solutions50.jar %*
+@java -jar solutions50.jar %*
 
-pause
+@pause
